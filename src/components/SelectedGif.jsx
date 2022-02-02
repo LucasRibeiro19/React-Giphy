@@ -3,7 +3,8 @@ function SelectedGif({gif}) {
 
     return ( 
         <>
-            <img className="selected"src={gif}/>
+            {gif ? <img className="selected"src={gif}/>: <></>}
+            {/* <img className="selected"src={gif}/> */}
         </>
      );
 }
